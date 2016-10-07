@@ -1,0 +1,12 @@
+ERRORS from the tester:
+
+1) System.out.println(s1.getRadius()); 
+      it triggered the compilation since when you are in the shape class (superclass), you can only call the functions within that class
+2) Shape s2 = new Shape(); 
+      cannot be instantiated because Shape is abstract
+3) System.out.println(s3.getLength()); 
+      same with the s1, you can only call the methods that are in the superclass and not from the class that extends the superclass
+4) System.out.println(s4.getSide());	
+      the function getSide is in the square class but not in the Shape class (superclass), that is why during compilation, it is an error
+5) System.out.println(r2.getSide()); 
+      rectangle doesn't have a method that is getSide, only the square has that function which extends the rectangle class
