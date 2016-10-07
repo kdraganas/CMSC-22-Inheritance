@@ -22,6 +22,7 @@ public class Square2 extends Rectangle2{
 	public void setLength(double side){
 		super.setLength(side);
 	}
+	@Override
 	public String toString(){
 		return "A square with side = " + getSide() + " which is a subclass of " + super.toString();
 	}		
