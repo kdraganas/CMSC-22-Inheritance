@@ -28,9 +28,11 @@ public class Rectangle2 extends Shape2{
 	public void setLength(double length){
 		this.length = length;
 	}
+	@Override
 	public double getArea(){
 		return width * length;
 	}
+	@Override
 	public double getPerimeter(){
 		return ((2*width) + (2*length));
 	}
